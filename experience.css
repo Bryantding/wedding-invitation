@@ -1,0 +1,57 @@
+/* Version 3 — paper theatre, quiet movement and real photographs. */
+.stage{box-shadow:0 15px 50px #71453725,0 1px 0 #fff7e9 inset}
+.floating-message,.toast{pointer-events:none}
+.floating-message{bottom:max(180px,25vh)}
+.envelope{transform:rotate(-6deg);filter:drop-shadow(0 12px 8px #6e383835)}
+.envelope-address{position:absolute;left:10%;bottom:15%;z-index:4;font:3.1cqw "Songti SC",STSong,serif;letter-spacing:.08em;color:#8b3940}
+.envelope-postmark{position:absolute;right:6%;bottom:10%;width:24%;aspect-ratio:1;border:2px double #a9525c;border-radius:50%;z-index:4;display:flex;align-items:center;justify-content:center;font:2.15cqw/1.6 Georgia,"Songti SC",serif;color:#9c4e57;transform:rotate(12deg);opacity:.7}
+.desk-couple{filter:drop-shadow(3px 4px 2px #5e3b342b)}
+.page-ribbon{position:absolute;left:-5%;top:23%;width:110%;height:56%;background:#f9e7cce8;clip-path:polygon(0 1%,100% 4%,98% 98%,0 94%);box-shadow:0 10px 30px #75493722;z-index:19;pointer-events:none;transform:translateX(-120%) rotate(-8deg);display:grid;place-items:center;opacity:0}
+.page-ribbon>span{font:4cqw "Songti SC",STSong,serif;letter-spacing:.25em;color:#a16565;border-block:1px solid #cda28a88;padding:18px 0}
+.paper-confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:18}
+.paper-confetti>i{position:absolute;left:var(--x);top:34%;width:8px;height:13px;border-radius:2px 6px 2px 6px;box-shadow:1px 1px #fff4da88;animation:paper-rain 1.8s var(--delay) cubic-bezier(.15,.6,.5,1) both}
+@keyframes paper-rain{0%{opacity:0;transform:translate(0,-25px) rotate(0) scale(.6)}10%{opacity:.9}100%{opacity:0;transform:translate(var(--drift),300px) rotate(var(--turn)) scale(1)}}
+.child-cards{transition:gap .9s}
+.child-card{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.child-cards.joined .child-card:first-child{transform:translateX(5%) rotate(-2deg)}
+.child-cards.joined .child-card:nth-child(2){transform:translateX(-5%) rotate(2deg)}
+.child-thread{position:absolute;top:69.5%;left:27%;right:27%;height:4%;display:flex;align-items:center;justify-content:center;color:#b44458;opacity:0;transform:scaleX(.4);transition:opacity .6s,transform .8s;pointer-events:none}
+.child-thread.visible{opacity:1;transform:scaleX(1)}
+.child-thread>i{height:1px;background:#bd6674;flex:1}.child-thread>b{font:5cqw Georgia,serif;padding:0 8px}
+.child-story{top:75%;font-size:3.7cqw;line-height:1.75}
+.home-evening{opacity:0;transition:opacity 1.2s;pointer-events:none}
+[data-night="true"] .home-evening{opacity:1}
+[data-night="true"] .home-couple{filter:brightness(.9) sepia(.08) drop-shadow(1px 3px 2px #45303940)}
+.home-couple{transition:transform .8s,filter 1.2s}
+.light-pull{position:absolute;right:3%;top:28%;width:17%;min-width:44px;height:18%;border:0;background:none;z-index:7;display:flex;align-items:center;flex-direction:column;justify-content:center;color:#8a3340;transition:opacity .5s}
+.light-pull>i{height:24%;width:1px;background:#b69067}.light-pull>span{width:36px;height:36px;border:1px solid #c4a27a;background:#fff0cc;border-radius:50%;display:grid;place-items:center;font:24px Georgia,serif;box-shadow:0 2px 2px #573b3022}
+.light-pull>small{font-size:2.5cqw;background:#fff2ddd9;padding:4px 6px;margin-top:4px;border-radius:2px;white-space:nowrap}
+.light-pull:disabled{opacity:0;pointer-events:none}.light-pull[aria-pressed="true"]>span{background:#ffdf97;box-shadow:0 0 22px #ffe8a6aa}
+.fairy-lights{position:absolute;left:11%;right:11%;top:23%;height:10%;z-index:5;display:flex;align-items:center;justify-content:space-around;border-top:1px solid #8c705b88;border-radius:0 0 50% 50%;opacity:0;transition:opacity 1s;pointer-events:none}
+.home-scene.is-open .fairy-lights{opacity:1}.fairy-lights>i{height:6px;width:5px;border-radius:40%;background:#d1ba94;transform:translateY(calc(var(--bulb) * .3px));transition:background .8s,box-shadow .8s;transition-delay:calc(var(--bulb) * .07s)}
+[data-night="true"] .fairy-lights>i{background:#ffe5a3;box-shadow:0 0 8px 3px #ffe6a078}
+.gallery-scene .chapter-heading{top:5.5%}.gallery-scene .chapter-heading h2{font-size:9.5cqw;letter-spacing:.07em}.gallery-scene .chapter-heading>span{font-size:2.65cqw;margin-top:8px}
+.album-filters{top:19%;left:7%;right:7%}
+.album-main{left:9%;right:9%;top:26%;height:43%}
+.album-feature,.album-paper{inset:auto;left:50%;top:50%;width:var(--frame-width,80%);height:var(--frame-height,100%);transition:width .3s,height .3s}
+.album-feature{transform:translate(-50%,-50%) rotate(-1.2deg);padding:8px 8px 0;box-shadow:0 7px 12px #70463124}
+.album-feature>img{height:calc(100% - 28px);width:100%;flex:none;object-fit:contain;background:#f8e8d0}
+.album-feature>span{height:28px;min-height:28px;font-size:2.7cqw;padding:7px 1px 4px}
+.paper-behind-one{transform:translate(-50%,-50%) rotate(-5deg)}.paper-behind-two{transform:translate(-50%,-50%) rotate(4deg)}
+.album-arrow{top:42%;background:#fff4dfde}.arrow-left{left:-9%}.arrow-right{right:-9%}
+.album-thumbnails{top:71%;height:6%;left:9%;right:9%}
+.album-meta{position:absolute;top:78%;left:9%;right:9%;height:6%;display:flex;align-items:center;justify-content:center;gap:12px}
+.album-meta .album-count{position:static;font-size:10px;flex-shrink:0}.album-meta>button{background:none;border:1px solid #c99289;color:#973d4b;border-radius:999px;min-height:28px;padding:4px 10px;font-size:2.75cqw;white-space:nowrap}.album-meta>button[aria-pressed="true"]{background:#f2d2c3}
+.candy-flavor{position:absolute;top:79.5%;left:10%;right:10%;text-align:center;font:3cqw "Songti SC",STSong,serif;letter-spacing:.08em;color:#8e3b46}
+.final-card{bottom:18.5%;gap:1cqw}.final-photo{height:27%;max-width:50%;box-shadow:3px 5px 0 #e5b8a7,0 0 0 1px #c69d82;transform:rotate(-4deg);border-width:5px;background:#fff3dd}
+.wedding-countdown{font-size:2.65cqw;letter-spacing:.04em;border-block:1px solid #caa18780;padding:4px 8px;margin:0;color:#936850}
+.final-card h3{margin-top:7px}.blessing-options{margin-top:auto}.blessing-options button{transition:transform .2s,background .2s}.blessing-options button:active{transform:translateY(2px)}
+.blessing-stamp{right:-6%;top:1%;padding:5px;grid-template-columns:repeat(2,1fr);gap:1px;line-height:1;letter-spacing:0;font-size:4cqw}
+@media(max-width:350px){.gallery-scene .chapter-heading>span{display:none}}
+.memory-stamps{display:flex;gap:20px;justify-content:center;margin-top:16px}.memory-stamps>span{width:62px;height:62px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;border:1px dashed #bea38e;border-radius:50%;color:#baa58f;font:25px Georgia,serif;transform:rotate(-9deg);transition:transform .4s,color .4s}.memory-stamps>span:nth-child(2){transform:rotate(6deg)}.memory-stamps small{font:10px -apple-system,sans-serif}.memory-stamps>span.collected{border:2px double #ac5e68;color:#a23b4c;background:#efd1b82e;transform:rotate(-13deg)}
+#chapters-dialog{max-height:90dvh}.chapters-paper nav{gap:0}.chapter-list-button{min-height:46px}.chapters-paper>h2{margin-bottom:12px}#secret-count{margin-top:12px;padding-top:12px}
+#keepsake-dialog{width:min(92vw,500px);background:#fff0dc;border-radius:5px;max-height:94dvh}.keepsake-paper{position:relative;padding:30px 24px 23px;text-align:center}.keepsake-paper .eyebrow{margin:0 0 10px;font-size:10px}.keepsake-paper h2{font:700 26px "Songti SC",STSong,serif;color:var(--wine);margin:0 0 18px}.guest-label{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;color:#8c5d4d;margin-bottom:16px}.guest-label input{width:50%;max-width:180px;border:0;border-bottom:1px solid #bb8c78;background:#f4dfc7;color:#7f3440;padding:10px 8px;border-radius:3px;font:14px "Songti SC",STSong,serif;outline-offset:3px}
+.keepsake-preview{position:relative;min-height:200px;margin:0 auto 16px;max-width:320px;background:#f1d6c0;border:1px solid #d0ac8b;box-shadow:0 5px 12px #75493720}.keepsake-preview img{display:block;width:100%;height:auto;user-select:auto;-webkit-touch-callout:default}.keepsake-preview img:not([src]){display:none}.keepsake-preview p{font-size:12px;line-height:1.8;padding:15px;color:#8f6451}.keepsake-note{font-size:11px;line-height:1.8;color:#92715a;margin:12px 0 0}.keepsake-paper>.solid{width:100%;max-width:320px}.keepsake-paper>.solid:disabled{opacity:.5}
+.keepsake-preview[aria-busy="true"] img{opacity:.5}.keepsake-preview img{transition:opacity .2s}.keepsake-preview[aria-busy="true"] p{position:absolute;left:0;right:0;top:40%;background:#fff0dde8;margin:0}.keepsake-preview>.small-button{margin-bottom:15px}
+@media(max-width:350px){.child-story{top:75%;font-size:11px;line-height:1.65}.child-thread{top:69%}.gallery-scene .chapter-heading>span{font-size:9px;margin-top:5px}.album-filters{top:19%;min-height:30px}.album-main{top:26%;height:43%}.album-thumbnails{top:71%;height:6%}.album-meta{top:78%;gap:8px}.album-meta>button{font-size:9px;padding-inline:7px;min-height:26px}.final-card{bottom:18.5%;gap:3px}.final-photo{height:23%;border-width:3px}.final-card h3{margin-top:4px}.wedding-countdown{font-size:9px;padding:3px 6px}.candy-flavor{font-size:9px}.memory-stamps{gap:12px;margin-top:11px}.memory-stamps>span{width:51px;height:51px}.chapters-paper{padding:24px 22px 16px}.chapters-paper>h2{font-size:20px;margin-bottom:10px}.chapter-list-button{min-height:39px}.keepsake-paper{padding:27px 17px 20px}.keepsake-paper h2{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.page-ribbon,.paper-confetti{display:none}.child-cards,.child-card,.child-thread,.home-evening,.home-couple,.fairy-lights,.fairy-lights>i,.album-feature,.album-paper{transition:none!important}}

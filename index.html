@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5e4da">
+  <meta name="description" content="丁树凯与叶小妹，2026年11月22日，邀请你来小家做客，一起分享成家的欢喜。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="丁树凯 & 叶小妹｜我们要结婚啦">
+  <meta property="og:description" content="2026.11.22，邀请你来分享成家的欢喜。轻点，拆开我们的互动喜帖。">
+  <meta property="og:url" content="https://bryantding.github.io/wedding-invitation/">
+  <meta property="og:image" content="https://bryantding.github.io/wedding-invitation/assets/share-cover-square.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="丁树凯与叶小妹的纸艺婚礼喜讯，2026年11月22日">
+  <link rel="canonical" href="https://bryantding.github.io/wedding-invitation/">
+  <link rel="icon" href="assets/share-cover-square.jpg">
+  <meta name="robots" content="noindex,nofollow">
+  <title>丁树凯 & 叶小妹 · 成家小屋</title>
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="chapters.css?v=3">
+  <link rel="stylesheet" href="experience.css?v=3">
+  <link rel="preload" as="image" href="assets/desk-background.webp">
+  <link rel="preload" as="image" href="assets/desk-couple.webp">
+  <link rel="preload" as="image" href="assets/door-pair.webp">
+</head>
+<body>
+  <main class="invitation" id="invitation" data-scene="desk" data-desk-open="false" data-dragging="false">
+    <header class="topbar">
+      <span class="brand"><span aria-hidden="true">❧</span> 树与叶 · 成家小记</span>
+      <div class="top-tools"><button class="music-control" id="sound" type="button" aria-label="开启参考配乐" aria-pressed="false"><span id="sound-symbol" aria-hidden="true">♪</span><small id="sound-label">配乐关</small></button><button class="quiet-button" id="info-open" type="button">婚礼信息 <span aria-hidden="true">↗</span></button></div>
+    </header>
+
+    <div class="stage-shell">
+      <div class="stage" id="stage" aria-busy="true">
+        <section class="scene desk-scene" id="desk-scene" aria-label="第一幕：拆开我们的喜讯">
+          <h1 class="sr-only">叮！我们要结婚啦。丁树凯与叶小妹，2026年11月22日。</h1>
+          <img class="scene-background" src="assets/desk-background.webp" alt="" draggable="false" fetchpriority="high">
+          <div class="desk-couple-window" aria-hidden="true">
+            <img class="desk-couple" src="assets/desk-couple.webp" alt="" draggable="false">
+          </div>
+          <img class="desk-foreground" src="assets/desk-background.webp" alt="" draggable="false">
+          <button class="envelope" id="envelope" type="button" aria-label="拆开信封，看看我们的喜讯">
+            <span class="envelope-back"></span>
+            <span class="envelope-letter"><span>致：亲爱的你</span><b>我们，把日子<br>过成了一个家</b><i>丁树凯 & 叶小妹</i></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-seal" aria-hidden="true">囍</span>
+            <span class="envelope-address" aria-hidden="true">敬邀 · 亲爱的你</span><span class="envelope-postmark" aria-hidden="true">喜事邮局<br>2026.11.22</span>
+            <span class="envelope-hint">轻点，拆开这份小欢喜</span>
+          </button>
+          <button class="heart-hotspot" id="send-heart" type="button" aria-label="给比心的新人送一个爱心" disabled></button>
+          <button class="tea-hotspot" id="tea-secret" type="button" aria-label="尝一口桌上的喜茶"></button><div class="tea-steam" id="tea-steam" aria-hidden="true"><i></i><i></i><i></i></div>
+          <button class="quiet-open" id="quiet-open" type="button">安静打开</button>
+          <button class="paper-action desk-action" id="desk-action" type="button"><span>有声拆开喜讯</span><i aria-hidden="true">♪</i></button>
+        </section>
+
+        <section class="scene childhood-scene" id="childhood-scene" aria-label="第二幕：从小朋友，到小两口" hidden>
+          <img class="scene-background" src="assets/story-stage.webp" alt="" draggable="false" loading="lazy">
+          <div class="chapter-heading"><p>从前，各自可爱</p><h2>这两个小朋友<br>要结婚啦</h2><span>点一下照片，看看长大后的我们</span></div>
+          <div class="child-cards">
+            <button class="child-card" id="child-groom" type="button" aria-label="翻开丁树凯的童年照片" aria-pressed="false"><span class="child-card-inner"><span class="child-front"><img src="assets/kid-groom.webp" alt="小时候举着苹果的丁树凯" loading="lazy"><b>丁树凯</b><small>小时候 · 点我长大</small></span><span class="child-back"><img src="assets/photos/11.webp" alt="现在的新郎丁树凯" loading="lazy"><b>新郎已就位</b><small>往后，一起过日子</small></span></span></button>
+            <button class="child-card" id="child-bride" type="button" aria-label="翻开叶小妹的童年照片" aria-pressed="false"><span class="child-card-inner"><span class="child-front"><img src="assets/kid-bride.webp" alt="小时候戴着帽子的叶小妹" loading="lazy"><b>叶小妹</b><small>小时候 · 点我长大</small></span><span class="child-back"><img src="assets/photos/12.webp" alt="现在的新娘叶小妹" loading="lazy"><b>新娘也已就位</b><small>往后，一起慢慢变老</small></span></span></button>
+          </div>
+          <span class="child-thread" id="child-thread" aria-hidden="true"><i></i><b>♡</b><i></i></span><p class="child-story" id="child-story">小时候，各自长大。<br>后来，决定一起成家。</p>
+          <button class="paper-action" id="child-next" type="button"><span>去看看我们的小家</span><i aria-hidden="true">♡</i></button>
+        </section>
+
+        <section class="scene home-scene" id="home-scene" aria-label="第三幕：推开我们的小家" hidden>
+          <h2 class="sr-only">欢迎来到我们的小家，从小朋友，到小两口。</h2>
+          <img class="scene-background" src="assets/home-background.webp" alt="" draggable="false">
+          <img class="scene-background home-evening" id="home-evening" src="assets/home-evening-v3.webp" alt="" draggable="false" loading="lazy">
+          <div class="fairy-lights" id="fairy-lights" aria-hidden="true"></div><button id="home-light" class="light-pull" type="button" aria-label="点亮小家的晚灯" aria-pressed="false" disabled><i aria-hidden="true"></i><span aria-hidden="true">☀</span><small>点亮小家</small></button>
+          <img class="home-couple" src="assets/home-couple.webp" alt="丁树凯与叶小妹挽着手，站在打开的小屋门前" draggable="false">
+          <div class="doorway" id="doorway">
+            <button class="door-leaf door-left" id="door-left" data-side="left" type="button" aria-label="向左推开左门，也可以轻点开门" aria-expanded="false">
+              <span class="door-panel panel-top"></span><span class="door-panel panel-bottom"></span>
+              <span class="door-sprig" aria-hidden="true">❧</span><span class="door-character" aria-hidden="true">丁</span><span class="door-knob"></span>
+            </button>
+            <button class="door-leaf door-right" id="door-right" data-side="right" type="button" aria-label="向右推开右门，也可以轻点开门" aria-expanded="false">
+              <span class="door-panel panel-top"></span><span class="door-panel panel-bottom"></span>
+              <span class="door-sprig" aria-hidden="true">❦</span><span class="door-character" aria-hidden="true">叶</span><span class="door-knob"></span>
+            </button>
+            <div class="door-instruction" id="door-instruction" aria-hidden="true"><span>←</span><b>向两侧推开</b><span>→</span><small>也可以轻点开门</small></div>
+          </div>
+          <button class="cat-hotspot" id="cat-secret" type="button" aria-label="摸摸门口的纸片小猫"></button>
+          <button class="paper-action home-action" id="home-action" type="button"><span>推开我们的小家</span><i aria-hidden="true">♡</i></button>
+        </section>
+
+        <section class="scene gallery-scene" id="gallery-scene" aria-label="第四幕：十八张婚纱照相册" hidden>
+          <img class="scene-background" src="assets/story-stage.webp" alt="" draggable="false" loading="lazy">
+          <div class="chapter-heading"><p>把喜欢的瞬间，认真收藏</p><h2>我们的相册</h2><span>轻点照片看大图 · 左右翻翻看</span></div>
+          <div class="album-filters" role="group" aria-label="相册主题"><button type="button" data-group="all" aria-pressed="true">全部 · 18</button><button type="button" data-group="window" aria-pressed="false">温柔时光</button><button type="button" data-group="light" aria-pressed="false">光影留念</button><button type="button" data-group="heart" aria-pressed="false">比心营业</button></div>
+          <div class="album-main"><span class="album-paper paper-behind-one" aria-hidden="true"></span><span class="album-paper paper-behind-two" aria-hidden="true"></span><button class="album-feature" id="album-open" type="button" aria-label="打开当前照片的大图"><img id="album-photo" src="assets/photos/01.webp" alt="我们的婚纱照" loading="lazy"><span id="album-caption"></span></button><button class="album-arrow arrow-left" id="album-prev" type="button" aria-label="上一张照片">‹</button><button class="album-arrow arrow-right" id="album-next" type="button" aria-label="下一张照片">›</button></div>
+          <div class="album-thumbnails" id="album-thumbnails" aria-label="选择婚纱照"></div><div class="album-meta"><p class="album-count" id="album-count" aria-live="polite">01 / 18</p><button id="album-keep" type="button" aria-pressed="false">♡ 选这张做纪念</button></div>
+          <div class="scene-actions"><button class="paper-action secondary-action" id="album-full" type="button"><span>查看整本相册</span><i aria-hidden="true">↗</i></button><button class="paper-action" id="gallery-continue" type="button"><span>去领一颗喜糖</span><i aria-hidden="true">→</i></button></div>
+        </section>
+
+        <section class="scene candy-scene" id="candy-scene" aria-label="第五幕：喜糖盒里的小祝福" hidden>
+          <img class="scene-background" src="assets/candy-stage.webp" alt="" draggable="false" loading="lazy">
+          <div class="chapter-heading"><p>一份欢喜，想分给你</p><h2>这一颗喜糖<br>给你</h2><span>打开糖盒，抽一份今天的小好运</span></div>
+          <div class="wish-slip" id="wish-slip" aria-live="polite"><span aria-hidden="true">❧</span><h3 id="wish-title">有一份甜蜜等你拆开</h3><p id="wish-body">点开喜糖盒，看看我们为你藏了什么。</p><small id="wish-count">一颗喜糖，一句祝福</small></div>
+          <div class="candy-lid" id="candy-lid" aria-hidden="true"><span>囍</span></div>
+          <div class="sweets"><button class="sweet strawberry" data-candy="strawberry" type="button" aria-label="拆一颗草莓喜糖"><span>囍</span></button><button class="sweet cream" data-candy="cream" type="button" aria-label="拆一颗奶油喜糖"><span>囍</span></button><button class="sweet peach" data-candy="peach" type="button" aria-label="拆一颗蜜桃喜糖"><span>囍</span></button></div>
+          <span class="candy-flavor" id="candy-flavor" aria-live="polite"></span>
+          <div class="scene-actions"><button class="paper-action secondary-action" id="candy-draw" type="button"><span>打开喜糖盒</span><i aria-hidden="true">♡</i></button><button class="paper-action" id="candy-continue" type="button"><span>去看正式邀请</span><i aria-hidden="true">→</i></button></div>
+        </section>
+
+        <section class="scene invite-scene" id="invite-scene" aria-label="第六幕：正式邀请你来参加婚礼" hidden>
+          <img class="scene-background" src="assets/invite-stage.webp" alt="" draggable="false" loading="lazy">
+          <div class="chapter-heading"><p>把这一天，留给我们</p><h2>婚礼见</h2></div>
+          <div class="final-card"><img class="final-photo" src="assets/photos/14.webp" alt="圆镜中的丁树凯和叶小妹" loading="lazy"><h3>丁树凯 <i>&</i> 叶小妹</h3><p class="final-date">2026.11.22</p><p class="final-week">星期日 · 邀请你来分享欢喜</p><p class="wedding-countdown" id="wedding-countdown"></p><address>安徽省宿州市灵璧县<br>韦集镇陈园村浦庄丁府</address><p class="final-line">喜酒一起喝，欢喜一起分。</p><div class="blessing-options" aria-label="给喜帖盖一枚祝福章"><button type="button" data-stamp="新婚快乐">新婚快乐</button><button type="button" data-stamp="百年好合">百年好合</button><button type="button" data-stamp="永结同心">永结同心</button></div><span class="blessing-stamp" id="blessing-stamp" aria-live="polite" hidden></span></div>
+          <div class="scene-actions"><button class="paper-action secondary-action" id="final-info" type="button"><span>婚礼信息</span><i aria-hidden="true">↗</i></button><button class="paper-action" id="keepsake-open" type="button"><span>领取纪念票</span><i aria-hidden="true">♡</i></button></div>
+        </section>
+
+        <div class="loading-screen" id="loading-screen" role="status"><span class="loading-flower" aria-hidden="true">❧</span><p>正在展开这份小欢喜</p><small id="loading-count">0 / 5</small></div>
+        <div class="asset-error" id="asset-error" hidden><p>小屋还没完全展开</p><button class="small-button" id="retry-assets" type="button">重新打开</button></div>
+        <div class="heart-particles" id="heart-particles" aria-hidden="true"></div>
+        <div class="paper-confetti" id="paper-confetti" aria-hidden="true"></div><div class="page-ribbon" id="page-ribbon" aria-hidden="true"><span>树与叶 · 成家小记</span></div>
+      </div>
+    </div>
+
+    <footer class="controls">
+      <button class="control-icon" id="scene-prev" type="button" aria-label="上一幕"><span aria-hidden="true">‹</span><small>上一幕</small></button>
+      <button class="chapter-picker" id="chapter-picker" type="button" aria-label="打开六幕目录"><span id="chapter-count">01 / 06</span><b id="chapter-name">拆开喜讯</b><span class="chapter-dots" id="chapter-dots" aria-hidden="true"></span></button>
+      <button class="control-icon" id="replay" type="button" aria-label="重玩当前一幕" title="重玩"><span aria-hidden="true">↻</span><small>重玩</small></button>
+      <button class="control-icon" id="scene-next" type="button" aria-label="下一幕"><span aria-hidden="true">›</span><small>下一幕</small></button>
+    </footer>
+    <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+  </main>
+
+  <dialog id="info-dialog" aria-labelledby="info-title">
+    <div class="info-paper">
+      <button class="dialog-close" id="info-close" type="button" aria-label="关闭婚礼信息">×</button>
+      <span class="info-sprig" aria-hidden="true">❧</span>
+      <p class="eyebrow">有一件人生喜事 · 想和你分享</p>
+      <h2 id="info-title">丁树凯 <span>&</span> 叶小妹</h2>
+      <p class="info-invite">我们结婚啦，邀请你来热闹一下。</p>
+      <div class="info-date"><b>11<span> / </span>22</b><p>2026年 · 星期日</p></div>
+      <p class="address-label">喜宴地点</p>
+      <address>安徽省宿州市灵璧县<br>韦集镇陈园村浦庄丁府</address>
+      <div class="info-actions"><button class="small-button solid" id="save-date" type="button">保存婚礼日期</button><button class="small-button" id="copy-address" type="button">复制地址</button></div>
+      <p class="info-note">喜酒一起喝，欢喜一起分。</p>
+      <p class="info-note"><a href="share.html">分享这份喜讯 ↗</a></p>
+    </div>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </dialog>
+  <dialog id="photo-dialog" aria-label="婚纱照相册大图"><div class="photo-viewer"><header><span id="photo-position">01 / 18</span><button id="photo-zoom" type="button">放大</button><button id="photo-close" type="button" aria-label="关闭相册">×</button></header><div class="photo-zone" id="photo-zone"><img id="photo-full" alt="" draggable="false"><button class="viewer-arrow viewer-prev" id="viewer-prev" type="button" aria-label="上一张大图">‹</button><button class="viewer-arrow viewer-next" id="viewer-next" type="button" aria-label="下一张大图">›</button></div><p id="photo-caption" role="status" aria-live="polite" aria-atomic="true"></p><div class="viewer-thumbnails" id="viewer-thumbnails"></div></div></dialog>
+  <dialog id="chapters-dialog" aria-labelledby="chapters-title"><div class="chapters-paper"><button id="chapters-close" class="dialog-close" type="button" aria-label="关闭目录">×</button><p class="eyebrow">树与叶的成家小记</p><h2 id="chapters-title">这一份欢喜，慢慢拆</h2><nav id="chapter-list" aria-label="六幕故事目录"></nav><div class="memory-stamps" aria-label="小屋彩蛋收集"><span data-memory="tea">♧<small>喜茶章</small></span><span data-memory="heart">♡<small>比心章</small></span><span data-memory="cat">⌁<small>小猫章</small></span></div><p id="secret-count">小彩蛋，也藏在日常里。</p></div></dialog>
+  <dialog id="keepsake-dialog" aria-labelledby="keepsake-title"><div class="keepsake-paper"><button id="keepsake-close" class="dialog-close" type="button" aria-label="关闭纪念票">×</button><p class="eyebrow">一份欢喜，想寄给你</p><h2 id="keepsake-title">这张小票，留给你</h2><label class="guest-label" for="keepsake-name">这份邀请，写给<input id="keepsake-name" type="text" maxlength="24" placeholder="亲爱的你" autocomplete="off"></label><div class="keepsake-preview"><img id="keepsake-image" alt="你的婚礼纪念票"><p id="keepsake-status" role="status">正在把欢喜装进小票…</p></div><button id="keepsake-download" class="small-button solid" type="button" disabled>保存这张纪念票 ↓</button><p class="keepsake-note">也可以长按卡片保存。昵称只用于当前卡片。</p></div></dialog>
+  <div class="floating-message" id="floating-message" role="status" hidden></div>
+  <audio id="soundtrack" src="assets/audio/someday-reference-cleaned.m4a" preload="none" loop playsinline></audio>
+  <script defer src="invitation-v3.js"></script>
+  <script defer src="wechat-share.js"></script>
+</body>
+</html>
